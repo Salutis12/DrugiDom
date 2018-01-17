@@ -35,7 +35,7 @@ class Add extends Component{
         fetch('/api/documents/', {
             method: 'post',
             headers:{
-                'Authorization' : 'Basic Z3J6ZWdvcno6bWFqMG5lejE=',
+                'Authorization' : 'Basic',
                 'Content-Type' : 'application/json'
             },
             body: JSON.stringify(this.state),

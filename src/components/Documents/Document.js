@@ -29,7 +29,7 @@ class Document extends Component{
         fetch(this.props.id, {
             method: 'delete',
             headers:{
-                'Authorization' : 'Basic Z3J6ZWdvcno6bWFqMG5lejE=',
+                'Authorization' : 'Basic',
             },
         }).then(() =>{
             this.props.onSubmit();
@@ -39,7 +39,7 @@ class Document extends Component{
         fetch(this.props.id, {
             method: 'put',
             headers:{
-                'Authorization' : 'Basic Z3J6ZWdvcno6bWFqMG5lejE=',
+                'Authorization' : 'Basic',
                 'Content-Type' : 'application/json'
             },
             body:JSON.stringify({
